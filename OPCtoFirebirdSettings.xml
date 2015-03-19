@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Settings>
+  <HostName>localhost</HostName>
+  <OpcServerVendor>RSLinx Remote OPC Server</OpcServerVendor>
+  <UpdateRate>5000</UpdateRate>
+  <DatabasePath>C:\RLIST.GDB</DatabasePath>
+  <UserName>RLIST</UserName>
+  <Password>rl</Password>
+  <Objects>
+    <Object>
+      <TableName>CPSDATA</TableName>
+      <StoredProcedureName>CPSDATA_I</StoredProcedureName>
+      <NumberOfVariablesInProcedure>100</NumberOfVariablesInProcedure>
+      <NeedTimeSync>True</NeedTimeSync>
+      <Tags>
+        <Address>[DNS2N]F15:0-3</Address>
+        <Address>[DNS2N]F15:5</Address>
+      </Tags>
+      <DTHourAddress>[DNS6N]F15:6</DTHourAddress>
+      <DTDayAddress>[DNS6N]F15:7</DTDayAddress>
+      <DTMonthAddress>[DNS6N]F15:8</DTMonthAddress>
+      <DTYearAddress>[DNS6N]F15:9</DTYearAddress>
+    </Object>
+    <Objects>
+      <Object>
+        <TableName>DNS3DATA</TableName>
+        <StoredProcedureName>DNS3DATA_I</StoredProcedureName>
+        <NumberOfVariablesInProcedure>98</NumberOfVariablesInProcedure>
+        <NeedTimeSync>False</NeedTimeSync>
+        <Tags>
+          <Address>[DNS3N]RejimData[{18-34}]</Address>
+          <Address>[DNS3N]RejimData[60]</Address>
+        </Tags>
+        <DTHourAddress>[DNS3N]RejimData[1]</DTHourAddress>
+        <DTDayAddress>[DNS3N]RejimData[2]</DTDayAddress>
+        <DTMonthAddress>[DNS3N]RejimData[3]</DTMonthAddress>
+        <DTYearAddress>[DNS3N]RejimData[4]</DTYearAddress>
+      </Object>
+    </Objects>
+  </Objects>
+</Settings>
